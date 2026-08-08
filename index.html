@@ -12,8 +12,10 @@
 <form action="/action_page.php" >
 <div class="card">
     <label class="field-label">Patient's Name</label>
-     <div class="field"><input type="text" placeholder="First">
-    <input type="text" placeholder="Last"></div>
+     <div class="field">
+    <input type="text" class="name-input" placeholder="First">
+    <input type="text" class="name-input" placeholder="Last">
+</div>
 </div>
 <div class="card">
     <label class="field-label">Gender</label>
@@ -38,7 +40,6 @@
 </div>
 <div class="card">
     <label class="field-label">Marital Status</label>
-    <div class="field">
         <input type="radio" id="single" name="maritalstatus" value="single">
         <label for="single">Single</label>
         <input type="radio" id="married" name="maritalstatus" value="married">
@@ -47,55 +48,58 @@
         <label for="divorced">Divorced</label>
         <input type="radio" id="widow" name="maritalstatus" value="widow">
         <label for="widow">Widow</label>
-    </div>
 </div>
 <div class="card">
     <label class="field-label">Patient's Address</label>
     <div class="field">
         <div><input type="text" class="street" placeholder="Street Address"></div>
-        <div><input type="text" placeholder="City">
-        <input type="text" placeholder="State"></div>
-        <div><input type="text" placeholder="Postal/Zip Code">
-        <input list="countries" placeholder="Country">
-      <datalist id="countries">
-    <option value="United States">
-    <option value="Russia">
-    <option value="China">
-    <option value="India">
-    <option value="Japan">
-  </datalist></div></div>
+        <div>
+            <input type="text" class="address-small" placeholder="City">
+            <input type="text" class="address-small" placeholder="State">
+        </div>
+        <div>
+            <input type="text" class="address-small" placeholder="Postal / Zip Code">
+            <input list="countries" class="address-small" placeholder="Country">
+            <datalist id="countries">
+            <option value="United States">
+            <option value="Russia">
+            <option value="China">
+            <option value="India">
+            <option value="Japan"></datalist>
+        </div>
+    </div>
 </div>
 <div class="card">
   <label class="field-label">Insurance Name</label>
-  <div class="field"><input type="text"></div>
+  <div class="field"><input type="text" id="insurance"></div>
 </div>
 <div class="card">
     <label class="field-label">Past medical history</label>
     <div class="checkbox-group">
     <div class="field"><input type="checkbox" id="disease1" value="Anemia">
     <label for="disease1">Anemia</label></div>
-    <div class="field"><input type="checkbox" id="disease2" value="Asthama">
-    <label for="disease2">Asthama</label></div>
-    <div><input type="checkbox" id="disease3" value="Bronchitis">
+    <div class="field"><input type="checkbox" id="disease2" value="Asthma">
+    <label for="disease2">Asthma</label></div>
+    <div class="field"><input type="checkbox" id="disease3" value="Bronchitis">
     <label for="disease3">Bronchitis</label></div>
-    <div><input type="checkbox" id="disease4" value="Chickenpox">
+    <div class="field"><input type="checkbox" id="disease4" value="Chickenpox">
     <label for="disease4">Chickenpox</label></div>
-    <div><input type="checkbox" id="disease5" value="Diabetes">
+    <div class="field"><input type="checkbox" id="disease5" value="Diabetes">
     <label for="disease5">Diabetes</label></div>
-    <div><input type="checkbox" id="disease6" value="Pneumonia">
+    <div class="field"><input type="checkbox" id="disease6" value="Pneumonia">
     <label for="disease6">Pneumonia</label></div>
-    <div><input type="checkbox" id="disease7" value="Thyroid">
-    <label for="disease7">Thyroid</label></div>
-    <div><input type="checkbox" id="disease8" value="Ulcer">
+    <div class="field"><input type="checkbox" id="disease7" value="Thyroid Disease">
+    <label for="disease7">Thyroid Disease</label></div>
+    <div class="field"><input type="checkbox" id="disease8" value="Ulcer">
     <label for="disease8">Ulcer</label></div>
-    <div><input type="checkbox" id="disease9" value="Other">
+    <div class="field"><input type="checkbox" id="disease9" value="Other">
     <label for="disease9">Other</label></div>
     </div>
 </div>
-<div class="card">
-    <label for="signature">Patient/Gaurdian Signature</label><br>
+<div class="signature_card">
+    <label for="signature">Patient/Guardian Signature</label>
     <label>According to our privacy policy and federal law, your information within this patient registration form will remain private at all time.
-    </label><br>
+    </label>
     <input type="text" id="signature" name="signature">
 </div>
 <div class="card">

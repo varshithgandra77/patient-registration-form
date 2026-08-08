@@ -1,92 +1,172 @@
 body {
-    background-color: gray;
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight:normal;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}  
-
-h1{
-    font-weight: normal;
-}
-
-.container{
-    width: 75%;
-    height: auto;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
     background-color: #f2f2f2;
-    border-radius: 15px;
-    margin: 5%;
-
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
-.card{ 
+.container {
+    width: 800px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.90);
+    border-radius: 5px;
+    margin: 40px 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: normal;
+    margin: 0 0 15px 0;
+    color: #111111;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.4;
+    margin: 0 0 15px 0;
+    color: #111111;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #777777;
+    margin: 15px 0;
+}
+
+.card {
     display: flex;
     flex-direction: row;
-    margin: 15px 0; 
-    justify-content: flex-start;  
+    margin: 25px 0;
 }
 
-.field-label{
+.field-label {
     width: 180px;
-    font-weight: bold;
+    font-weight: normal;
+    font-size: 16px;
+    color: #111111;
     flex-shrink: 0;
 }
 
-.field{
+.field {
     flex: 1;
 }
 
-.street{
-    width: 350px;
-}
-
-.card input[type=text], .card input[type=email], .card input[type=tel], .card select, .card textarea {
-    width: 200px;
-    padding:10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-}
-
-.card input[type=submit] {
-    width: 100%;
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
+.field input[type="text"],
+.field input[type="tel"],
+.field input[type="date"] {
+    background-color: #d3d3d3;
     border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.card input[type=submit]:hover {
-    background-color: #45a049;
-}
-
-.card input[type=radio] {
-    margin-right: 10px;
+    border-radius: 6px;
+    padding: 15px;
     box-sizing: border-box;
+    font-size: 16px;
 }
 
-.card input[type=date] {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
+.name-input {
+    width: 48%;
+}
+
+.name-input:first-child {
+    margin-right: 2%;
+}
+
+#phone {
+    width: 290px;
+}
+
+#dob {
+    width: 290px;
+}
+
+.card input[type="radio"] {
+    margin-right: 5px;
+}
+
+.card label {
+    font-size: 16px;
+    color: #111111;
+}
+
+.street {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.address-input {
+    width: 48%;
+    margin-bottom: 15px;
+}
+
+.address-input:first-child {
+    margin-right: 2%;
+}
+
+#insurance {
+    width: 250px;
 }
 
 .checkbox-group {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    margin: 15px 0; 
-    justify-content: flex-center;  
+}
+
+.checkbox-group .field {
+    margin-bottom: 15px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+}
+
+.signature_card {
+    display: flex;
+    flex-direction: column;
+    margin: 25px 0;
+}
+
+.signature_card label:first-child {
+    font-size: 16px;
+    font-weight: normal;
+    color: #111111;
+    margin-bottom: 5px;
+}
+
+.signature_card label:nth-child(2) {
+    font-size: 13px;
+    font-weight: normal;
+    color: #111111;
+    margin-bottom: 10px;
+}
+
+#signature {
+    width: 100%;
+    height: 110px;
+    background-color: #d3d3d3;
+    border: none;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+#human {
+    width: 18px;
+    height: 18px;
+}
+
+.card input[type="submit"] {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.card input[type="submit"]:hover {
+    background-color: #333333;
 }
