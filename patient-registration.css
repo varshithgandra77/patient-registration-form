@@ -104,6 +104,62 @@ hr {
     margin-right: 2%;
 }
 
+.address-small {
+    width: 46%;
+    margin: 0 2% 2% 0;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 46%;
+    margin: 0 2% 2% 0;
+}
+
+/* Style the dropdown button */
+.dropbtn {
+    background-color: #d3d3d3;
+    border: none;
+    border-radius: 6px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width:100%;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside dropdown content */
+.dropdown-content a {
+  color: #111111;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1
+}
+
+/* Show the dropdown content on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change background color of dropdown button on hover */
+.dropdown:hover .dropbtn {
+  background-color: #d3d3d3;
+}
+
 #insurance {
     width: 250px;
 }

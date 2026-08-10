@@ -1,116 +1,134 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Patient Registration Form</title>
-    <link rel= "stylesheet" href="patient-registration.css">
+    <link rel="stylesheet" href="patient-registration.css">
 </head>
+
 <body>
-<div class="container">
-<h1>Patient Registration Form</h1>
-<p>Thank you for applying to our practices. Please complete this patient<br>registration form with your information, and a doctor will contact you shortly.</p>
-<hr>
-<form action="/action_page.php" >
-<div class="card">
-    <label class="field-label">Patient's Name</label>
-     <div class="field">
-    <input type="text" class="name-input" placeholder="First">
-    <input type="text" class="name-input" placeholder="Last">
-</div>
-</div>
-<div class="card">
-    <label class="field-label">Gender</label>
-    <div class="field">
-        <input type="radio" id="male" name="gender" value="male">
-        <label for="male">Male</label>
-        <input type="radio" id="female" name="gender" value="female">
-        <label for="female">Female</label>
+    <div class="container">
+        <h1>Patient Registration Form</h1>
+        <p>Thank you for applying to our practices. Please complete this patient<br>registration form with your
+            information, and a doctor will contact you shortly.</p>
+        <hr>
+        <form action="/action_page.php">
+            <div class="card">
+                <label class="field-label">Patient's Name</label>
+                <div class="field">
+                    <input type="text" class="name-input" placeholder="First">
+                    <input type="text" class="name-input" placeholder="Last">
+                </div>
+            </div>
+            <div class="card">
+                <label class="field-label">Gender</label>
+                <div class="field">
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </div>
+            </div>
+            <div class="card">
+                <label class="field-label">Phone</label>
+                <div class="field">
+                    <input type="tel" id="phone" placeholder="### ### ####">
+                </div>
+            </div>
+            <div class="card">
+                <label class="field-label">Date of Birth</label>
+                <div class="field">
+                    <input type="date" id="dob">
+                </div>
+            </div>
+            <div class="card">
+                <label class="field-label">Marital Status</label>
+                <input type="radio" id="single" name="maritalstatus" value="single">
+                <label for="single">Single</label>
+                <input type="radio" id="married" name="maritalstatus" value="married">
+                <label for="married">Married</label>
+                <input type="radio" id="divorced" name="maritalstatus" value="divorced">
+                <label for="divorced">Divorced</label>
+                <input type="radio" id="widow" name="maritalstatus" value="widow">
+                <label for="widow">Widow</label>
+            </div>
+            <div class="card">
+                <label class="field-label">Patient's Address</label>
+                <div class="field">
+                    <div><input type="text" class="street" placeholder="Street Address"></div>
+                    <div>
+                        <input type="text" class="address-small" placeholder="City">
+                        <input type="text" class="address-small" placeholder="State">
+                    </div>
+                    <div>
+                        <input type="text" class="address-small" placeholder="Postal / Zip Code">
+                        <div class="dropdown">
+                            <button class="dropbtn">Country</button>
+                            <div class="dropdown-content">
+                                <a>United States</a>
+                                <a>Russia</a>
+                                <a>China</a>
+                                <a>India</a>
+                                <a>Japan</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <label class="field-label">Insurance Name</label>
+                <div class="field"><input type="text" id="insurance"></div>
+            </div>
+            <div class="card">
+                <label class="field-label">Past medical history</label>
+                <div class="checkbox-group">
+                    <div class="field"><input type="checkbox" id="disease1" value="Anemia">
+                        <label for="disease1">Anemia</label>
+                    </div>
+                    <div class="field"><input type="checkbox" id="disease2" value="Asthma">
+                        <label for="disease2">Asthma</label>
+                    </div>
+                    <div class="field"><input type="checkbox" id="disease3" value="Bronchitis">
+                        <label for="disease3">Bronchitis</label>
+                    </div>
+                    <div class="field"><input type="checkbox" id="disease4" value="Chickenpox">
+                        <label for="disease4">Chickenpox</label>
+                    </div>
+                    <div class="field"><input type="checkbox" id="disease5" value="Diabetes">
+                        <label for="disease5">Diabetes</label>
+                    </div>
+                    <div class="field"><input type="checkbox" id="disease6" value="Pneumonia">
+                        <label for="disease6">Pneumonia</label>
+                    </div>
+                    <div class="field"><input type="checkbox" id="disease7" value="Thyroid Disease">
+                        <label for="disease7">Thyroid Disease</label>
+                    </div>
+                    <div class="field"><input type="checkbox" id="disease8" value="Ulcer">
+                        <label for="disease8">Ulcer</label>
+                    </div>
+                    <div class="field"><input type="checkbox" id="disease9" value="Other">
+                        <label for="disease9">Other</label>
+                    </div>
+                </div>
+            </div>
+            <div class="signature_card">
+                <label for="signature">Patient/Guardian Signature</label>
+                <label>According to our privacy policy and federal law, your information within this patient
+                    registration form will remain private at all time.
+                </label>
+                <input type="text" id="signature" name="signature">
+            </div>
+            <div class="card">
+                <label class="field-label">Verification</label>
+                <div class="field"><input type="checkbox" id="human" required>
+                    <label for="human">I am not a robot</label>
+                </div>
+            </div>
+            <div class="card">
+                <input type="submit" value="Register">
+            </div>
+        </form>
     </div>
-</div>
-<div class="card">
-    <label class="field-label">Phone</label>
-    <div class="field">
-        <input type="tel" id="phone" placeholder="### ### ####">
-    </div>
-</div>
-<div class="card">
-    <label class="field-label">Date of Birth</label>
-    <div class="field">
-        <input type="date" id="dob">
-    </div>
-</div>
-<div class="card">
-    <label class="field-label">Marital Status</label>
-        <input type="radio" id="single" name="maritalstatus" value="single">
-        <label for="single">Single</label>
-        <input type="radio" id="married" name="maritalstatus" value="married">
-        <label for="married">Married</label>
-        <input type="radio" id="divorced" name="maritalstatus" value="divorced">
-        <label for="divorced">Divorced</label>
-        <input type="radio" id="widow" name="maritalstatus" value="widow">
-        <label for="widow">Widow</label>
-</div>
-<div class="card">
-    <label class="field-label">Patient's Address</label>
-    <div class="field">
-        <div><input type="text" class="street" placeholder="Street Address"></div>
-        <div>
-            <input type="text" class="address-small" placeholder="City">
-            <input type="text" class="address-small" placeholder="State">
-        </div>
-        <div>
-            <input type="text" class="address-small" placeholder="Postal / Zip Code">
-            <input list="countries" class="address-small" placeholder="Country">
-            <datalist id="countries">
-            <option value="United States">
-            <option value="Russia">
-            <option value="China">
-            <option value="India">
-            <option value="Japan"></datalist>
-        </div>
-    </div>
-</div>
-<div class="card">
-  <label class="field-label">Insurance Name</label>
-  <div class="field"><input type="text" id="insurance"></div>
-</div>
-<div class="card">
-    <label class="field-label">Past medical history</label>
-    <div class="checkbox-group">
-    <div class="field"><input type="checkbox" id="disease1" value="Anemia">
-    <label for="disease1">Anemia</label></div>
-    <div class="field"><input type="checkbox" id="disease2" value="Asthma">
-    <label for="disease2">Asthma</label></div>
-    <div class="field"><input type="checkbox" id="disease3" value="Bronchitis">
-    <label for="disease3">Bronchitis</label></div>
-    <div class="field"><input type="checkbox" id="disease4" value="Chickenpox">
-    <label for="disease4">Chickenpox</label></div>
-    <div class="field"><input type="checkbox" id="disease5" value="Diabetes">
-    <label for="disease5">Diabetes</label></div>
-    <div class="field"><input type="checkbox" id="disease6" value="Pneumonia">
-    <label for="disease6">Pneumonia</label></div>
-    <div class="field"><input type="checkbox" id="disease7" value="Thyroid Disease">
-    <label for="disease7">Thyroid Disease</label></div>
-    <div class="field"><input type="checkbox" id="disease8" value="Ulcer">
-    <label for="disease8">Ulcer</label></div>
-    <div class="field"><input type="checkbox" id="disease9" value="Other">
-    <label for="disease9">Other</label></div>
-    </div>
-</div>
-<div class="signature_card">
-    <label for="signature">Patient/Guardian Signature</label>
-    <label>According to our privacy policy and federal law, your information within this patient registration form will remain private at all time.
-    </label>
-    <input type="text" id="signature" name="signature">
-</div>
-<div class="card">
-    <label class="field-label">Verification</label>
-    <div class="field"><input type="checkbox" id="human" required>
-    <label for="human">I am not a robot</label></div>
-</div>
-<div class="card">
-    <input type="submit" value="Register">
-</div>
-</form>
-</div>
 </body>
+
 </html>
