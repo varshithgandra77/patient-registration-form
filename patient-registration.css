@@ -1,6 +1,6 @@
 body {
     background-color: #f2f2f2;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Raleway;
     font-weight: normal;
     margin: 0;
     display: flex;
@@ -9,6 +9,7 @@ body {
 
 .container {
     width: 800px;
+    max-width: 100%;
     padding: 30px;
     background-color: rgba(255, 255, 255, 0.90);
     border-radius: 5px;
@@ -63,7 +64,7 @@ hr {
     padding: 15px;
     box-sizing: border-box;
     font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
     color: grey;
 }
 
@@ -77,10 +78,12 @@ hr {
 
 #phone {
     width: 290px;
+    max-width: 100%;
 }
 
 #dob {
     width: 290px;
+    max-width: 100%;
 }
 
 .card input[type="radio"] {
@@ -99,7 +102,8 @@ hr {
 
 .address-small {
     width: 46%;
-    margin: 0 2% 2% 0;
+    margin: 0 2% 15px 0;
+    box-sizing: border-box;
 }
 
 .dropdown {
@@ -107,6 +111,7 @@ hr {
     display: inline-block;
     width: 46%;
     margin: 0 2% 2% 0;
+
 }
 
 .dropbtn {
@@ -119,36 +124,37 @@ hr {
     box-sizing: border-box;
     font-size: 16px;
     cursor: pointer;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
     font-weight: normal;
     color: grey;
 }
 
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  width:100%;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
 .dropdown-content div {
-  color: #111111;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+    color: #111111;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
 }
 
 .dropdown-content div:hover {
-  background-color: #f1f1f1
+    background-color: #f1f1f1
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
+    display: block;
 }
 
 #insurance {
     width: 250px;
+    max-width: 100%;
 }
 
 .checkbox-group {
@@ -212,4 +218,85 @@ hr {
 
 .card input[type="submit"]:hover {
     background-color: #333333;
+}
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+
+    .container {
+        width: 100%;
+        padding: 20px;
+        margin: 20px 0;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .card {
+        flex-direction: column;
+        margin: 20px 0;
+    }
+
+    .field-label {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    .field {
+        width: 100%;
+    }
+
+    .name-input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .name-input:first-child {
+        margin-right: 0;
+    }
+
+    #phone,
+    #dob,
+    #insurance {
+        width: 100%;
+    }
+
+    .street {
+        width: 100%;
+    }
+
+    .address-small {
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+
+    .dropdown {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .dropbtn {
+        width: 100%;
+    }
+
+    .signature_card {
+        margin: 20px 0;
+    }
+
+    #signature {
+        width: 100%;
+    }
+
+    .card input[type="submit"] {
+        width: 100%;
+    }
 }
